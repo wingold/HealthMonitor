@@ -1,0 +1,5 @@
+a.btn_blue { background: url(../images/titbg1.gif) repeat-x; 
+float: left; display: block; height:23px; border:1px solid #9bbbd9; border-bottom:2px solid #7a9ec0; border-right:1px solid #2f7dc6; padding:0 1em 0 1em; line-height:22px; margin-right:1em; 
+font-size:12px; }
+a:link.btn_blue,a:visited.btn_blue, a:hover.btn_blue, a:active.btn_blue { color:#0362A7; text-decoration:none;}
+a:hover.btn_blue { color:#f98305; text-decoration:none;}

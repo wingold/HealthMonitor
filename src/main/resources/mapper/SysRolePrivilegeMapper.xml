@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cplatform.back.mapper.SysRolePrivilegeMapper">
+    <resultMap id="BaseResultMap" type="com.cplatform.back.entity.SysRolePrivilege">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="ROLE_ID" property="roleId" jdbcType="BIGINT"/>
+        <result column="MENU_CODE" property="menuCode" jdbcType="VARCHAR"/>
+        <result column="MENU_BTN" property="menuBtn" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findByUserRolePrivilege" resultMap="BaseResultMap">
+        select p.* from t_sys_role_privilege p where p.role_id
+        in (select r.role_id from t_sys_user_role r where r.user_id=#{userId})
+    </select>
+</mapper>

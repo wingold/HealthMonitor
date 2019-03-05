@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cplatform.back.mapper.BuildingMapper" >
+
+    <resultMap id="BaseResultMap" type="com.cplatform.back.entity.Building" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="building_id" property="buildingId" jdbcType="VARCHAR" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="school_id" property="schoolId" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+    <select id="getAllBuilding" resultMap="BaseResultMap">
+        select * from building where type = 0
+    </select>
+
+    <select id="getAllSchool" resultMap="BaseResultMap">
+        select * from building where type = 1
+    </select>
+    
+</mapper>

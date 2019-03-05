@@ -1,0 +1,242 @@
+/* jquery dialog */
+.jquery-dialog-mask-color,
+.jquery-dialog-mask-transparent {
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.jquery-dialog-mask-color,
+.jquery-dialog-mask-transparent {
+    background: url("mask.png");
+}
+
+.jquery-dialog {
+    text-align: left;
+}
+
+.dialog-outer-fixed {
+    position: fixed;
+}
+
+.dialog-outer-absolute {
+    position: absolute;
+}
+
+.jquery-dialog-mask,
+.jquery-dialog {
+    z-index: 212122000;
+}
+
+.jquery-dialog .dialog-top-container,
+.jquery-dialog .dialog-bottom-container {
+    height: 5px;
+}
+
+.jquery-dialog .dialog-top-border,
+.jquery-dialog .dialog-bottom-border,
+.jquery-dialog .dialog-left-border,
+.jquery-dialog .dialog-right-border,
+.jquery-dialog .dialog-top-left-corner,
+.jquery-dialog .dialog-top-right-corner,
+.jquery-dialog .dialog-bottom-left-corner,
+.jquery-dialog .dialog-bottom-right-corner {
+    opacity: 0.20;
+    filter: alpha(opacity=20);
+    font-size: 0;
+    line-height: 0;
+    float: inherit;
+    float: left;
+}
+
+.jquery-dialog .dialog-top-border,
+.jquery-dialog .dialog-bottom-border {
+    height: 5px;
+    background-color: #000;
+}
+
+.jquery-dialog .dialog-left-border,
+.jquery-dialog .dialog-right-border {
+    width: 5px;
+    background-color: #000;
+}
+
+.jquery-dialog .dialog-top-left-corner,
+.jquery-dialog .dialog-top-right-corner,
+.jquery-dialog .dialog-bottom-left-corner,
+.jquery-dialog .dialog-bottom-right-corner {
+    width: 5px;
+    height: 5px;
+    background: url("dialog.gif");
+}
+
+.jquery-dialog .dialog-top-left-corner {
+    background-position: -30px 0;
+}
+
+.jquery-dialog .dialog-top-right-corner {
+    background-position: -35px 0;
+}
+
+.jquery-dialog .dialog-bottom-left-corner {
+    background-position: -30px -5px;
+}
+
+.jquery-dialog .dialog-bottom-right-corner {
+    background-position: -35px -5px;
+}
+
+.jquery-dialog .dialog-inner-container {
+    float: left;
+    background: #fff;
+    border: 1px solid #acacac;
+}
+
+.jquery-dialog .dialog-title-container {
+    padding: 0;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    height: 29px;
+    background-color: #eff4f8;
+    overflow: hidden;
+}
+
+.jquery-dialog .dialog-title {
+    float: left;
+    height: 21px;
+    line-height: 15px;
+    font-weight: bold;
+    padding: 8px 8px 0 8px;
+    color: #333;
+    overflow: hidden;
+}
+
+.jquery-dialog .dialog-button-close {
+    float: inherit;
+    float: right;
+    font-size: 0;
+    line-height: 0;
+    margin: 7px 8px 0 0;
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    background-image: url("dialog.gif");
+    background-position: 0 0;
+    cursor: pointer;
+}
+
+.jquery-dialog .dialog-button-close-hover {
+    background-position: -13px 0;
+}
+
+.jquery-dialog .dialog-button-container {
+    text-align: center;
+    padding: 15px 0 20px 0;
+}
+
+.jquery-dialog .dialog-button-container .dialog-button-accept,
+.jquery-dialog .dialog-button-container .dialog-button-cancel {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* below two style rules are very important */
+/* they can grow with children, and they can be restricted by another "width" style also */
+.jquery-dialog .dialog-content-container {
+    overflow: hidden;
+    display: inline-block;
+    *zoom: 1; *display: inline; /* IE6/7 fake inline-block */
+}
+
+/* jquery inform, jquery alert, jquery confirm */
+.jquery-inform .dialog-content-container,
+.jquery-alert .dialog-content-container,
+.jquery-confirm .dialog-content-container {
+    padding: 20px 20px 0 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+
+.jquery-inform .dialog-content-container {
+    padding-bottom: 20px;
+}
+
+/* inside tip style definition with jquery dialog */
+.jquery-tip .dialog-title-container {
+    display: none;
+}
+
+.jquery-tip .dialog-tip-arrow {
+    z-Index: 1;
+    position: absolute;
+    font-size: 0;
+    background: url("dialog.gif");
+}
+
+.jquery-tip .dialog-tip-arrow-top,
+.jquery-tip .dialog-tip-arrow-bottom {
+    width: 16px;
+    height: 9px;
+}
+
+.jquery-tip .dialog-tip-arrow-left,
+.jquery-tip .dialog-tip-arrow-right {
+    height: 16px;
+    width: 9px;
+}
+
+.jquery-tip .dialog-tip-arrow-top {
+    top: -3px;
+    background-position: -40px 0;
+}
+
+.jquery-tip .dialog-tip-arrow-bottom {
+    bottom: -3px;
+    background-position: -60px 0;
+}
+
+.jquery-tip .dialog-tip-arrow-left {
+    left: -3px;
+    background-position: -80px 0;
+}
+
+.jquery-tip .dialog-tip-arrow-right {
+    right: -3px;
+    background-position: -90px 0;
+}
+
+
+
+.jquery-dialog .dialog-content {
+    padding-left: 40px;
+}
+
+.jquery-dialog .icon-exclamation,
+.jquery-dialog .icon-question,
+.jquery-dialog .icon-information {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("icons.gif");
+}
+
+.jquery-dialog .icon-exclamation {
+    background-position: 0 0;
+}
+
+.jquery-dialog .icon-question {
+    background-position: 0 -32px;
+}
+
+.jquery-dialog .icon-information {
+    background-position: 0 -64px;
+}
+
+.sample-tip .dialog-content-container {
+    padding: 10px;
+}
