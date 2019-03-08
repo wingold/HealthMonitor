@@ -38,7 +38,10 @@ public class ClassInfo extends BaseEntity {
     // 班级人数
     private String classNum;
 
-    // 教师ID
-    private Long teacherId;
+    // 班主任名字
+    private String classTeacherName;
+
+    // 体育老师名字
+    private String peTeacherName;
 
 }

@@ -14,7 +14,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
-@Table(name = "t_school_information")
+@Table(name = "t_school")
 public class SchoolInformation extends BaseEntity {
     private String schoolType;//学校类型
 

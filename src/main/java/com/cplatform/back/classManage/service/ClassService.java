@@ -40,11 +40,12 @@ public class ClassService {
         Example.Criteria criteria = example.createCriteria();
         System.out.println("class:"+classInfo.toString());
         if (StringUtil.isNotEmpty(classInfo.getSchoolName())){
-            criteria.andEqualTo("schoolName",classInfo.getSchoolName());
+            criteria.andLike("schoolName","%"+classInfo.getSchoolName()+"%");
         }
         if (StringUtil.isNotEmpty(classInfo.getClassName())){
-            criteria.andEqualTo("className",classInfo.getClassName());
+            criteria.andLike("className","%"+classInfo.getClassName()+"%");
         }
+        
         example.setOrderByClause("id asc");
         List<ClassInfo> classList = classMapper.selectByExample(example);
         return new PageInfo<>(classList);
