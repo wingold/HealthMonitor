@@ -1,12 +1,14 @@
 package com.cplatform.back.classManage.service;
 
-import com.cplatform.back.classManage.entity.Class;
+import com.cplatform.back.classManage.entity.ClassInfo;
 import com.cplatform.back.classManage.mapper.ClassMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.github.pagehelper.util.StringUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
@@ -32,9 +34,19 @@ public class ClassService {
     @Autowired
     private ClassMapper classMapper;
 
-    public PageInfo<Class> findClass() {
+    public PageInfo<ClassInfo> findClass(ClassInfo classInfo) {
         PageHelper.startPage(1, 20);
-        List<Class> classList = classMapper.getClassList();
+        Example example = new Example(ClassInfo.class);
+        Example.Criteria criteria = example.createCriteria();
+        System.out.println("class:"+classInfo.toString());
+        if (StringUtil.isNotEmpty(classInfo.getSchoolName())){
+            criteria.andEqualTo("schoolName",classInfo.getSchoolName());
+        }
+        if (StringUtil.isNotEmpty(classInfo.getClassName())){
+            criteria.andEqualTo("className",classInfo.getClassName());
+        }
+        example.setOrderByClause("id asc");
+        List<ClassInfo> classList = classMapper.selectByExample(example);
         return new PageInfo<>(classList);
     }
 

@@ -24,16 +24,9 @@ import javax.persistence.Transient;
 @Getter
 @Setter
 @Table(name = "t_class")
-public class Class extends BaseEntity {
-
-    // 班级编号
-    private String classCode;
-
-    // 学校ID
-    private Long schoolId;
+public class ClassInfo extends BaseEntity {
 
     // 学校名称
-    @Transient
     private String schoolName;
 
     // 年级名称

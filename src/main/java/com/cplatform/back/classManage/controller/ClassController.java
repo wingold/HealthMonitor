@@ -1,6 +1,6 @@
 package com.cplatform.back.classManage.controller;
 
-import com.cplatform.back.classManage.entity.Class;
+import com.cplatform.back.classManage.entity.ClassInfo;
 import com.cplatform.back.classManage.service.ClassService;
 import com.github.pagehelper.PageInfo;
 import org.apache.log4j.Logger;
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * 班级管理控制类 Title. <br>
@@ -36,9 +35,9 @@ public class ClassController {
     private ClassService classService;
 
     @RequestMapping(value = "/list")
-    public String protocol(@ModelAttribute("class")Class classes, Model model){
+    public String protocol(@ModelAttribute("classInfo")ClassInfo classInfo, Model model){
         try {
-            PageInfo<Class> pageClass = this.classService.findClass();
+            PageInfo<ClassInfo> pageClass = this.classService.findClass(classInfo);
             model.addAttribute("pageData", pageClass);
         } catch (Exception e) {
             log.error("查询班级列表异常", e);

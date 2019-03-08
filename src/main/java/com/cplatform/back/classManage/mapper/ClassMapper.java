@@ -1,6 +1,6 @@
 package com.cplatform.back.classManage.mapper;
 
-import com.cplatform.back.classManage.entity.Class;
+import com.cplatform.back.classManage.entity.ClassInfo;
 import org.springframework.stereotype.Repository;
 import com.cplatform.back.utils.BasicMapper;
 
@@ -20,8 +20,7 @@ import java.util.List;
  * <p>
  */
 @Repository
-public interface ClassMapper extends BasicMapper<Class> {
+public interface ClassMapper extends BasicMapper<ClassInfo> {
 
-    List<Class> getClassList();
 
 }
