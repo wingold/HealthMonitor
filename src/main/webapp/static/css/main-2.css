@@ -1,0 +1,1215 @@
+
+
+
+/* -----------------------------------------------------------
+	content
+----------------------------------------------------------- */
+#content, #content textarea, #content div {
+    font-family: Arial,Verdana, Lucida, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+#content
+{
+    margin: 0 20px 10px 20px;
+    padding: 0;
+    min-height: 100%;
+    clear: both;
+    overflow: hidden;
+    background: transparent;
+}
+#content div.inputs{ padding:10px; margin-left:120px; background:#eee;border:1px solid #dedede; position:relative; }
+/* -----------------------------------------------------------
+	content -> right -> forms -> labels
+----------------------------------------------------------- */
+#content div.box
+{
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+    clear: both;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> box / title
+----------------------------------------------------------- */
+
+#content div.box div.title
+{
+    margin: 0 0 20px 0;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+    font: bold 12px Verdana;
+    border-bottom: 2px solid #b1c9ec;
+    padding-left: 15px; /*offset of tabs relative to browser left edge*/
+    margin:0 5px;
+    height:30px;
+}
+
+#content div.box div.title h1,
+#content div.box div.title h2,
+#content div.box div.title h3,
+#content div.box div.title h4,
+#content div.box div.title h5,
+#content div.box div.title h6
+{
+    margin: 0;
+    padding: 11px 0 11px 10px;
+    float: left;
+    border: none;
+    color: #2d2b2b;
+}
+
+#content div.box div.title ul.links
+{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#content div.box div.title ul.links li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+#content div.box div.title ul.links li a
+{
+    margin: 0;
+    padding: 13px 16px 12px 16px;
+    height: 1%;
+    display: block;
+    float: left;
+    background: url("../smooth/images/colors/blue/title_link.png") no-repeat top left;
+    border-left: 1px solid #316293;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content div.box div.title ul.links li a:hover
+{
+    background: url("../smooth/images/colors/blue/title_tab_selected.png") no-repeat bottom center;
+    color: #bfe3ff;
+}
+
+#content div.box div.title ul.links li.ui-tabs-selected a
+{
+    background: url("../smooth/images/colors/blue/title_tab_selected.png") no-repeat bottom center;
+    color: #bfe3ff;
+}
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------
+	content -> right -> box / forms
+----------------------------------------------------------- */
+
+div.form
+{
+    margin: 0;
+    padding: 0 5px 10px 5px;
+    clear: both;
+    overflow: hidden;
+}
+
+.ui-dialog div.form
+{
+    padding: 0;
+}
+
+div.form div.fields
+{
+    margin: 0;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+div.form div.fields div.field
+{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    height: 1%;
+    border-bottom: 1px solid #DDDDDD;
+    clear: both;
+    overflow: hidden;
+}
+
+div.form div.fields div.field-first
+{
+    padding: 0 0 10px 0;
+}
+
+div.form div.fields div.field span.error
+{
+    margin: 0;
+    padding: 8px 0 0 0;
+    height: 1%;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    color: #FF0000;
+}
+
+div.form div.fields div.field span.tip
+{
+    margin: 0;
+    padding: 5px 0 0 10px;
+    height: 1%;
+    color: #FF0000;
+    float: left;
+}
+
+div.form div.fields div.field div.input-file span.tip
+{
+    float: none;
+    position: relative;
+    left:35px;
+}
+
+div.form div.fields div.field span.success
+{
+    margin: 8px 0 0 0;
+    padding: 0;
+    height: 1%;
+    display: block;
+    color: #316309;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> labels
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.label
+{
+    left: 8px;
+    margin: 0;
+    padding: 8px 0 0 5px;
+    width: auto;
+    position: absolute;
+}
+
+div.form div.fields div.field div.noinput
+{
+    padding-top:0px;
+    font-weight: bold;
+}
+
+.ui-dialog div.form div.fields div.field div.label,
+div.box-left div.form div.fields div.field div.label,
+div.box-right div.form div.fields div.field div.label
+{
+    left: 0;
+    margin: 0;
+    padding: 0 0 8px 0;
+    width: auto;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> label (select)
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.label-select
+{
+    padding: 2px 0 0 5px;
+}
+
+.ui-dialog div.form div.fields div.field div.label-select,
+div.box-left div.form div.fields div.field div.label-select,
+div.box-right div.form div.fields div.field div.label-select
+{
+    padding: 0 0 8px 0;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> label (checkbox)
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.label-checkbox
+{
+    padding: 0 0 0 5px;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> label (radio)
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.label-radio
+{
+    padding: 0 0 0 5px;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> label (textarea)
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.label-textarea
+{
+    padding: 0 0 0 5px;
+}
+
+.ui-dialog div.form div.fields div.field div.label-textarea,
+div.box-left div.form div.fields div.field div.label-textarea,
+div.box-right div.form div.fields div.field div.label-textarea
+{
+    padding: 0 0 8px 0;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> labels (label)
+----------------------------------------------------------- */
+div.form div.fields div.field div.label label.req
+{
+    background: #fff url('../smooth/images/icons/req.png') no-repeat left center ;
+    padding-left:14px;
+}
+
+
+div.form div.fields div.field div.label label
+{
+    color: #666;
+    font-weight: bold;
+}
+
+div.form div.fields div.field div.label > span
+{
+    margin: 0;
+    padding: 2px 0 0 0;
+    height: 1%;
+    display: block;
+    color: #363636;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> input
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.input,div.form div.fields div.field div.input2
+{
+    margin: 0 0 0 120px;
+    padding: 0;
+}
+
+.ui-dialog div.form div.fields div.field div.input,
+div.box-left div.form div.fields div.field div.input,
+div.box-right div.form div.fields div.field div.input
+{
+    margin: 0;
+    padding: 5px 7px 6px 7px;
+    clear: both;
+    overflow: hidden;
+    border-top: 1px solid #b3b3b3;
+    border-left: 1px solid #b3b3b3;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+div.form div.fields div.field div.input input,
+div.form div.fields div.field div.input textarea
+{
+    margin: 0;
+    padding: 5px 7px 6px 7px;
+    float: left;
+    background: #FFFFFF;
+    border: 1px solid #b3b3b3;
+    border-right-color: #eaeaea;
+    border-bottom-color: #eaeaea;
+    color: #000000;
+    font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+    font-size: 12px;
+}
+div.form div.fields div.field #divAdd div.input input{float:none;}
+
+div.form div.fields div.field div.input div.span
+{
+    margin: 0;
+    padding: 5px 7px 6px 7px;
+    float: left;
+    background: #FFFFFF;
+    border-top: 1px solid #b3b3b3;
+    border-left: 1px solid #b3b3b3;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    color: #000000;
+    font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+.ui-dialog div.form div.fields div.field div.input input,
+div.box-left div.form div.fields div.field div.input input,
+div.box-right div.form div.fields div.field div.input input
+{
+    width: 100%;
+    padding: 0;
+    border: none;
+}
+
+div.form div.fields div.field div.input-file input
+{
+    float: none;
+}
+
+div.form div.fields div.field div.input input.small
+{
+    width: 30%;
+}
+
+div.form div.fields div.field div.input input.medium
+{
+    width: 55%;
+}
+
+div.form div.fields div.field div.input input.large
+{
+    width: 85%;
+}
+
+div.form div.fields div.field div.input input.date
+{
+    width: 180px;
+    cursor: text;
+}
+
+div.form div.fields div.field div.input input.button
+{
+    margin: 0;
+    padding: 4px 8px 4px 8px;
+    background: #D4D0C8;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    color: #000000;
+}
+
+div.form div.fields div.field div.input input.validation-failed,
+div.form div.fields div.field div.input textarea.validation-failed
+{
+    background: #FBE3E4;
+    border-top: 1px solid #e1b2b3;
+    border-left: 1px solid #e1b2b3;
+    border-right: 1px solid #FBC2C4;
+    border-bottom: 1px solid #FBC2C4;
+}
+
+div.form div.fields div.field div.input input.validation-passed,
+div.form div.fields div.field div.input textarea.validation-passed
+{
+    background: #E6EFC2;
+    border-top: 1px solid #cebb98;
+    border-left: 1px solid #cebb98;
+    border-right: 1px solid #c6d880;
+    border-bottom: 1px solid #c6d880;
+}
+
+div.form div.fields div.field div.input img.ui-datepicker-trigger
+{
+    margin: 0 0 0 6px;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> input (file styling)
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.input a.ui-input-file
+{
+    margin: 0 0 0 6px;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    display: inline;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    background: #e5e3e3 url("../smooth/images/button_browse.png") no-repeat;
+    border: none;
+    text-decoration: none;
+}
+
+div.form div.fields div.field div.input a:hover.ui-input-file
+{
+    background: #e5e3e3 url("../smooth/images/button_browse_selected.png") no-repeat;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> textarea
+----------------------------------------------------------- */
+div.form div.fields div.field div.input textarea
+{
+    width: 60%;
+    height: 100px;
+}
+
+
+div.form div.fields div.field div.textarea textarea.validation-passed
+{
+    padding: 3px 10px 10px 23px;
+    /*background-color: #E6EFC2;*/
+    background-image: url("../smooth/images/icons/accept.png");
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    /*border: 1px solid #C6D880;*/
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> textarea (tinymce editor)
+----------------------------------------------------------- */
+
+#content div.box div.form div.fields div.field div.textarea table
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+}
+
+#content div.box div.form div.fields div.field div.textarea table td
+{
+    padding: 0;
+    background: #DDDDDD;
+    border: none;
+}
+
+#content div.box div.form div.fields div.field div.textarea table td table
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    border: none;
+}
+
+#content div.box div.form div.fields div.field div.textarea table td table td
+{
+    padding: 5px 5px 5px 0;
+    font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+    font-size: 11px;
+}
+
+#content div.box div.form div.fields div.field div.textarea table td table td a
+{
+    border: none;
+}
+
+#content div.box div.form div.fields div.field div.textarea table td table td a.mceButtonActive
+{
+    background: #b1b1b1;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> select
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.select
+{
+    margin: 0 0 0 120px;
+    padding: 0;
+    float: left;
+}
+
+div.form div.fields div.field div.select a:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+div.form div.fields div.field div.select select
+{
+    margin: 0;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> select (jquery styling)
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.select a.ui-selectmenu-focus
+{
+    border: 1px solid #666666;
+}
+
+div.form div.fields div.field div.select a.ui-selectmenu
+{
+    color: #565656;
+    text-decoration: none;
+}
+
+div.form div.fields div.field div.select a.ui-selectmenu:hover
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+div.form div.fields div.field div.select a.ui-selectmenu-focus span.ui-icon
+{
+    background-image: url(../smooth/images/ui/ui-icons_222222_256x240.png);
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> element focus
+----------------------------------------------------------- */
+
+div.form div.fields div.field input[type=text]:focus,
+div.form div.fields div.field input[type=password]:focus,
+div.form div.fields div.field input[type=file]:focus,
+div.form div.fields div.field textarea:focus,
+div.form div.fields div.field select:focus
+{
+    background: #f6f6f6;
+    border-color: #666;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> checkboxes
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.checkboxes
+{
+    margin: 0 0 0 120px;
+    padding: 0;
+}
+
+div.form div.fields div.field div.checkboxes div.checkbox
+{
+    margin: 0;
+    padding: 2px 0 2px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+div.form div.fields div.field div.checkboxes div.checkbox input
+{
+    margin: 2px 0 0 1px;
+    margin: 0 \0/;
+    float: left;
+}
+
+div.form div.fields div.field div.checkboxes div.checkbox label
+{
+    padding-right:10px;
+    margin: 1px 0 2px 1px;
+    margin: 3px 0 2px 1px \0/;
+    height: 1%;
+    float: left;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> radios
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.radios
+{
+    margin: 0 0 0 120px;
+    padding: 0;
+}
+
+div.form div.fields div.field div.radios div.radio
+{
+    margin: 0;
+    padding: 2px 0 2px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+div.form div.fields div.field div.radios div.radio input
+{
+    margin: 2px 0 0 1px;
+    margin: 0 \0/;
+    float: left;
+}
+
+div.form div.fields div.field div.radios div.radio label
+{
+    padding-right:10px;
+    margin: 1px 0 2px 1px;
+    margin: 3px 0 2px 1px \0/;
+    height: 1%;
+    display: block;
+    float: left;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> button
+----------------------------------------------------------- */
+
+div.form div.fields div.field div.button
+{
+    margin: 0;
+    padding: 0 0 0 8px;
+    float: left;
+}
+
+div.form div.fields div.field div.button input
+{
+    margin: 0;
+    color: #000000;
+    font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+div.form div.fields div.field div.button .ui-state-default
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #e5e3e3 url("../smooth/images/button.png") repeat-x;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #c6c6c6;
+    color: #515151;
+    outline: none;
+}
+
+div.form div.fields div.field div.button .ui-state-hover
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #b4b4b4 url("../smooth/images/button_selected.png") repeat-x;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #bebebe;
+    border-right: 1px solid #b1b1b1;
+    border-bottom: 1px solid #afafaf;
+    color: #515151;
+    outline: none;
+}
+
+div.form div.fields div.field div.highlight
+{
+    display: inline;
+}
+
+div.form div.fields div.field div.highlight .ui-state-default
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #4e85bb url("../smooth/images/colors/blue/button_highlight.png") repeat-x;
+    border-top: 1px solid #5c91a4;
+    border-left: 1px solid #2a6f89;
+    border-right: 1px solid #2b7089;
+    border-bottom: 1px solid #1a6480;
+    color: #FFFFFF;
+}
+
+div.form div.fields div.field div.highlight .ui-state-hover
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #46a0c1 url("../smooth/images/colors/blue/button_highlight_selected.png") repeat-x;
+    border-top: 1px solid #78acbf;
+    border-left: 1px solid #34819e;
+    border-right: 1px solid #35829f;
+    border-bottom: 1px solid #257897;
+    color: #FFFFFF;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> buttons
+----------------------------------------------------------- */
+
+div.form div.fields div.buttons
+{
+    margin: 10px 0 0 120px;
+    padding: 0;
+}
+
+div.box-left div.form div.fields div.buttons,
+div.box-right div.form div.fields div.buttons
+{
+    margin: 10px 0 0 0;
+}
+
+div.form div.fields div.buttons input
+{
+    margin: 0;
+    color: #000000;
+    font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* -----------------------------------------------------------
+	content -> right -> forms -> buttons (jquery styling)
+----------------------------------------------------------- */
+
+div.form div.fields div.buttons .ui-state-default
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #e5e3e3 url("../smooth/images/button.png") repeat-x;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #c6c6c6;
+    color: #515151;
+    outline: none;
+     cursor: pointer;
+}
+
+div.form div.fields div.buttons .ui-state-hover
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #b4b4b4 url("../smooth/images/button_selected.png") repeat-x;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #bebebe;
+    border-right: 1px solid #b1b1b1;
+    border-bottom: 1px solid #afafaf;
+    color: #515151;
+    outline: none;
+}
+
+div.form div.fields div.buttons div.highlight
+{
+    display: inline;
+    cursor: pointer;
+}
+
+div.form div.fields div.buttons div.highlight .ui-state-default
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #4e85bb url("../smooth/images/colors/blue/button_highlight.png") repeat-x;
+    border-top: 1px solid #5c91a4;
+    border-left: 1px solid #2a6f89;
+    border-right: 1px solid #2b7089;
+    border-bottom: 1px solid #1a6480;
+    color: #FFFFFF;
+}
+
+div.form div.fields div.buttons div.highlight .ui-state-hover
+{
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    background: #46a0c1 url("../smooth/images/colors/blue/button_highlight_selected.png") repeat-x;
+    border-top: 1px solid #78acbf;
+    border-left: 1px solid #34819e;
+    border-right: 1px solid #35829f;
+    border-bottom: 1px solid #257897;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------
+	jquery ui
+----------------------------------------------------------- */
+
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* -----------------------------------------------------------
+	jquery ui -> icons
+----------------------------------------------------------- */
+
+.ui-icon { width: 16px; height: 16px; background-image: url(../smooth/images/ui/ui-icons_222222_256x240.png); }
+.ui-widget-content .ui-icon { background-image: url(../smooth/images/ui/ui-icons_222222_256x240.png); }
+.ui-widget-header .ui-icon { background-image: url(../smooth/images/ui/ui-icons_222222_256x240.png); }
+.ui-state-default .ui-icon { background-image: url(../smooth/images/ui/ui-icons_ef8c08_256x240.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon { background-image: url(../smooth/images/ui/ui-icons_ef8c08_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(../smooth/images/ui/ui-icons_ef8c08_256x240.png); }
+.ui-state-highlight .ui-icon {background-image: url(../smooth/images/ui/ui-icons_228ef1_256x240.png); }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(../smooth/images/ui/ui-icons_ffd27a_256x240.png); }
+
+/* -----------------------------------------------------------
+	jquery ui -> icon positioning
+----------------------------------------------------------- */
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-off { background-position: -96px -144px; }
+.ui-icon-radio-on { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+/* -----------------------------------------------------------
+	jquery ui -> misc visuals
+----------------------------------------------------------- */
+
+.ui-widget-overlay { background: #666666 url(../smooth/images/ui/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat; opacity: .50;filter:Alpha(Opacity=50); }
+.ui-widget-shadow { margin: -5px 0 0 -5px; padding: 5px; background: #000000 url(../smooth/images/ui/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x; opacity: .20;filter:Alpha(Opacity=20); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+/* -----------------------------------------------------------
+	jquery ui -> resizable
+----------------------------------------------------------- */
+
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/* Selectable
+
+/* -----------------------------------------------------------
+	jquery ui -> tabs
+----------------------------------------------------------- */
+.ui-tabs .ui-tabs-hide { display: none; }
+
+/* -----------------------------------------------------------
+	jquery ui -> datepicker
+----------------------------------------------------------- */
+.ui-datepicker { width: 190px; padding: .2em .2em 0; background: #FFFFFF; border: 1px solid #000000; border-top: none; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; background: #F6F6F6; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 1px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left: 0; }
+.ui-datepicker .ui-datepicker-next { right: 0; }
+.ui-datepicker .ui-datepicker-prev-hover { left: 0; }
+.ui-datepicker .ui-datepicker-next-hover { right: 0; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker table {width: 100%; border-collapse: collapse; margin: 0 0 4px 0; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: 3px; text-align: center;  text-decoration: none; }
+.ui-datepicker td span, .ui-datepicker td a:hover { background: #376ea6; color: #ffffff; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+.ui-datepicker td span, .ui-datepicker td.ui-datepicker-today a { background: #DDDDDD; color: #585858; }
+.ui-datepicker td span, .ui-datepicker td.ui-datepicker-current-day a { background: #376ea6; color: #ffffff; }
+
+/* -----------------------------------------------------------
+	jquery ui -> datepicker / multiple calenders
+----------------------------------------------------------- */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; }
+
+/* -----------------------------------------------------------
+	jquery ui -> datepicker / rtl support
+----------------------------------------------------------- */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* -----------------------------------------------------------
+	jquery ui -> select styling
+----------------------------------------------------------- */
+
+.ui-selectmenu
+{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #b3b3b3;
+    border-left: 1px solid #b3b3b3;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    text-decoration: none;
+}
+
+.ui-selectmenu-icon { position:absolute; right:6px; margin-top:-8px; top: 50%; }
+.ui-selectmenu-menu { padding:0; margin:0; list-style:none; position:absolute; top: 0; visibility: hidden; overflow: auto; }
+.ui-selectmenu-open { background: #ffffff; border: 1px solid #666666; border-top: none; visibility: visible; }
+.ui-selectmenu-menu-popup { margin-top: -1px; }
+.ui-selectmenu-menu-dropdown { }
+.ui-selectmenu-menu li { padding:0; margin:0; display: block; border-top: 1px dotted transparent; border-bottom: 1px dotted transparent; border-right-width: 0 !important; border-left-width: 0 !important; }
+.ui-selectmenu-menu li a,.ui-selectmenu-status {line-height: 1.4em; display:block; padding: 5px 0 5px 8px; outline:none; text-decoration:none; color: #000000; }
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,
+.ui-selectmenu-hasIcon .ui-selectmenu-status  { margin-left: 5px; padding-left: 20px; position: relative; }
+.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon { position: absolute; top: 1em; margin-top: -8px; left: 0; }
+.ui-selectmenu-status { line-height: 1.4em; }
+.ui-selectmenu-open li.ui-selectmenu-item-focus { background: #376ea6; }
+.ui-selectmenu-open li.ui-selectmenu-item-focus a { color: #ffffff; }
+.ui-selectmenu-open li.ui-selectmenu-item-selected { background: #dfdfdf; }
+.ui-selectmenu-open li.ui-selectmenu-item-selected a { color: #000000; }
+.ui-selectmenu-menu li span,.ui-selectmenu-status span { display:block; margin-bottom: .2em; }
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label { line-height: 1.4em; display:block; padding:.6em .5em 0; }
+.ui-selectmenu-menu .ui-selectmenu-group ul { margin: 0; padding: 0; }
+
+/* reset extra padding in firefox */
+.ui-button::-moz-focus-inner { border: 0; padding: 0; }
+
+/* -----------------------------------------------------------
+	jquery ui -> autocomplete
+----------------------------------------------------------- */
+
+.ui-autocomplete { margin: 0; padding: 0; list-style: none; position: absolute; background: #ffffff; border: 1px solid #666666; border-top: none; }
+.ui-autocomplete .ui-menu-item { margin: 0; padding: 0; }
+.ui-autocomplete .ui-menu-item a { margin: 0; padding: 8px; height: 1%; display: block; text-decoration: none; }
+.ui-autocomplete .ui-menu-item a:hover { background: #376ea6; color: #ffffff; }
+
+/* -----------------------------------------------------------
+	jquery ui -> dialog
+----------------------------------------------------------- */
+
+.ui-dialog { position: absolute; padding: 0; width: 300px; overflow: hidden; background: #ffffff; border: 1px solid #336699; }
+.ui-dialog .ui-dialog-titlebar { padding: 8px; position: relative; clear: both; overflow: hidden; background: #336699 url("../smooth/images/colors/blue/title.png") repeat-x; color: #ffffff; font-weight: bold; }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 0; }
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { border: 0; padding: 15px; background: none; overflow: auto; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left; background-image: none; margin: 0; padding: 10px 10px 15px 10px; clear: both; overflow: hidden; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+.ui-dialog p
+{
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #5f5f5f;
+    font-size: 11px;
+    line-height: 150%;
+}
+
+.ui-dialog .ui-dialog-buttonpane button
+{
+    margin: 0 6px 0 0;
+    float: right;
+    color: #000000;
+    font-family: Lucida Grande, Verdana, Lucida Sans Regular, Lucida Sans Unicode, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-state-default
+{
+    padding: 6px 12px 6px 12px;
+    background: #e5e3e3 url("../smooth/images/button.png") repeat-x;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #c6c6c6;
+    color: #515151;
+    outline: none;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-state-hover
+{
+    padding: 6px 12px 6px 12px;
+    background: #b4b4b4 url("../smooth/images/button_selected.png") repeat-x;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #bebebe;
+    border-right: 1px solid #b1b1b1;
+    border-bottom: 1px solid #afafaf;
+    color: #515151;
+    outline: none;
+}

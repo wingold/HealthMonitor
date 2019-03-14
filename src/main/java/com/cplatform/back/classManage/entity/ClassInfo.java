@@ -26,7 +26,11 @@ import javax.persistence.Transient;
 @Table(name = "t_class")
 public class ClassInfo extends BaseEntity {
 
+    // 学校ID
+    private String schoolId;
+
     // 学校名称
+    @Transient
     private String schoolName;
 
     // 年级名称
@@ -39,9 +43,9 @@ public class ClassInfo extends BaseEntity {
     private String classNum;
 
     // 班主任名字
-    private String classTeacherName;
+    private String classteacherId;
 
     // 体育老师名字
-    private String peTeacherName;
+    private String peteacherId;
 
 }

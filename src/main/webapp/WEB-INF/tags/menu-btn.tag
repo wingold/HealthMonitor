@@ -9,8 +9,8 @@
 <%--attribute for input --%>
 <c:if test="${type == 'search'}">
     <c:set var="src" value="${pageContext.request.contextPath}/static/images/ico_search.gif" />
-    <c:set var="text" value="查询条件"/>
-    <c:set var="class" value="class='switch'"/>
+    <c:set var="text" value="搜索"/>
+    <c:set var="classes" value="class='switch'"/>
 </c:if>
 <c:if test="${type == 'add'}">
 	<c:set var="src" value="${pageContext.request.contextPath}/static/images/ico_add.gif" />
@@ -24,4 +24,4 @@
 <c:if test="${not empty url}"><c:set var="href" value="${pageContext.request.contextPath}${url}"/></c:if>
 <c:if test="${not empty menuSelected }"><c:set var="menuSelected" value="class='${menuSelected }'"/></c:if>
 
-<li><a href="${href}"  ${class}   ${menuSelected}><img src="${src}" align="absmiddle" />${text}</a></li>
+<li><a href="${href}"  ${classes}   ${menuSelected}><img src="${src}" align="absmiddle" />${text}</a></li>

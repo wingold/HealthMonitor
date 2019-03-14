@@ -4,15 +4,24 @@
 
     <resultMap id="BaseResultMap" type="com.cplatform.back.classManage.entity.ClassInfo" >
         <id column="id" property="id" jdbcType="INTEGER" />
-        <result column="school_name" property="schoolName" jdbcType="VARCHAR" />
+        <result column="school_id" property="schoolId" jdbcType="VARCHAR" />
         <result column="grade_name" property="gradeName" jdbcType="VARCHAR" />
         <result column="class_name" property="className" jdbcType="VARCHAR" />
         <result column="class_num" property="classNum" jdbcType="INTEGER" />
-        <result column="teacher_id" property="teacherId" jdbcType="INTEGER" />
+        <result column="classteacher_id" property="classteacherId" jdbcType="VARCHAR" />
+        <result column="peteacher_id" property="peteacherId" jdbcType="VARCHAR" />
         <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
         <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
     </resultMap>
-    
+
+    <select id="getClassList" resultMap="BaseResultMap">
+        select
+           c.*,
+           s.school_name schoolName
+        from t_class c
+        left join t_school s on c.school_id = s.id
+    </select>
+
     <insert id="addClass" >
 
     </insert>

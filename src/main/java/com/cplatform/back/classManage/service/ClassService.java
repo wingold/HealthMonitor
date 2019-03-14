@@ -2,6 +2,8 @@ package com.cplatform.back.classManage.service;
 
 import com.cplatform.back.classManage.entity.ClassInfo;
 import com.cplatform.back.classManage.mapper.ClassMapper;
+import com.cplatform.back.schoolManage.entity.SchoolInformation;
+import com.cplatform.back.schoolManage.mapper.SchoolInformationMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.github.pagehelper.util.StringUtil;
@@ -34,6 +36,9 @@ public class ClassService {
     @Autowired
     private ClassMapper classMapper;
 
+    @Autowired
+    private SchoolInformationMapper schoolInformationMapper;
+
     public PageInfo<ClassInfo> findClass(ClassInfo classInfo) {
         PageHelper.startPage(1, 20);
         Example example = new Example(ClassInfo.class);
@@ -45,10 +50,15 @@ public class ClassService {
         if (StringUtil.isNotEmpty(classInfo.getClassName())){
             criteria.andLike("className","%"+classInfo.getClassName()+"%");
         }
-        
+
         example.setOrderByClause("id asc");
         List<ClassInfo> classList = classMapper.selectByExample(example);
         return new PageInfo<>(classList);
+    }
+
+    public List<SchoolInformation> findSchool(){
+        List<SchoolInformation> schoolList = schoolInformationMapper.selectAll();
+        return schoolList;
     }
 
 }

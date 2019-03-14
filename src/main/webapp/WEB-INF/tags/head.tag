@@ -13,7 +13,8 @@
     <script src="<spring:url value="/static/global.js"/>" type="text/javascript" charset="utf-8"></script>
 
 
-    <script src="<spring:url value="/static/js/jquery-1.8.3.js"/>" type="text/javascript" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <%--<script src="<spring:url value="/static/js/jquery-1.8.3.js"/>" type="text/javascript" charset="utf-8"></script>--%>
     <script src="<spring:url value="/static/js/jquery.blockUI.js"/>" type="text/javascript" charset="utf-8"></script>
     <script src="<spring:url value="/static/js/jquery.cookie.js"/>" type="text/javascript" charset="utf-8"></script>
     <script src="<spring:url value="/static/js/jquery.form.js"/>" type="text/javascript" charset="utf-8"></script>
@@ -30,7 +31,7 @@
     <script src="<spring:url value="/static/js/search-menu.js"/>" type="text/javascript" charset="utf-8"></script>
 
     <!-- form 界面 -->
-    <script src="<spring:url value="/static/smooth/scripts/smooth.form.js"/>" type="text/javascript"></script>
+    <script src="<spring:url value="/static/smooth/scripts/smooth.form.js?20190312"/>" type="text/javascript"></script>
     <script src="<spring:url value="/static/smooth/scripts/jquery-ui-1.8.custom.min.js"/>" type="text/javascript"></script>
     <script src="<spring:url value="/static/smooth/scripts/jquery.ui.selectmenu.js"/>" type="text/javascript"></script>
     <!-- dialog -->

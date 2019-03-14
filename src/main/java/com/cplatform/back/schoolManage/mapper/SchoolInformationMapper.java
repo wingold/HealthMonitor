@@ -1,6 +1,7 @@
 package com.cplatform.back.schoolManage.mapper;
 
 import com.cplatform.back.schoolManage.entity.SchoolInformation;
+import com.cplatform.back.utils.BasicMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,6 +11,6 @@ import java.util.List;
  * @date 2019/2/22
  */
 @Repository
-public interface SchoolInformationMapper {
-    List<SchoolInformation> getSchoolList();
+public interface SchoolInformationMapper extends BasicMapper<SchoolInformation> {
+
 }

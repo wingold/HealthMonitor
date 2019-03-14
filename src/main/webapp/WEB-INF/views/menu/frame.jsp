@@ -12,4 +12,6 @@
     <frame name="topFrame" scrolling="NO" noresize src="<spring:url value="/menu/head"/>" bordercolor="#0099CC">
     <frame name="containerFrame" src="<spring:url value="/menu/container"/>">
 </frameset>
+    <%--<iframe src="/menu/container" width="20%" height="100%"></iframe>--%>
+    <%--<iframe src="/menu/head" width="80%" height="20%"/>--%>
 </html>

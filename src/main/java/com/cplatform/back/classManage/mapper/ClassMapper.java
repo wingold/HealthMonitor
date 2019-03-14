@@ -22,5 +22,6 @@ import java.util.List;
 @Repository
 public interface ClassMapper extends BasicMapper<ClassInfo> {
 
+    List<ClassInfo> getClassList();
 
 }

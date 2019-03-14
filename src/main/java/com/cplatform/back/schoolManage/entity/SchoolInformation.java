@@ -20,9 +20,11 @@ public class SchoolInformation extends BaseEntity {
 
     private String schoolName;//学校名称
 
-    private String school_address;//学校地址
+    private String schoolCode;//学校编号
 
-    private Date createTime;//创建时间
+    private String schoolAddress;//学校地址
 
-    private Date updateTime;//修改时间
+    private String area;//行政区域
+
+    private String status;//状态
 }
